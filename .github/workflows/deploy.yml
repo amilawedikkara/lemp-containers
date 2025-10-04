@@ -53,7 +53,7 @@ jobs:
           host: ${{ secrets.VM_IP }}
           username: ubuntu
           key: ${{ secrets.VM_SSH_KEY }}
-          source: "./db/init/init.sql"
+          source: "db/init/*"
           target: "/opt/lemp/db/init/"
 
   deploy:
